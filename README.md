@@ -6,12 +6,14 @@
 
 ## Purpose:
 
-An efficient python implementation of the "modified Breiman estimator" adaptive kernel density estimation method utilising
-balltree partitioning to speed up computation.
+An efficient python implementation of the "modified Breiman estimator" adaptive kernel density estimation method, utilising an
+[Epanechnikov (1969)](https://doi.org/10.1137%2F1114019 "Epanechnikov 1969")
+kernel with the local bandwith varying according to an initial pilot density estimate. Balltree partitioning to used to speed up computation.
+
 Based on a modification to [Breiman, Meisel and Purcell (1977)](https://doi.org/10.2307/1268623 "Breiman 1977") by 
-[Wilkinson and Meijer (1995)](https://doi.org/10.1016/0169-2607(95)01628-7 "Wilkinson 1995") see also 
+[Wilkinson and Meijer (1995)](https://doi.org/10.1016/0169-2607(95)01628-7 "Wilkinson 1995"). See also 
 [Ferdosi et al. (2011)](https://www.aanda.org/articles/aa/abs/2011/07/aa16878-11/aa16878-11.html "Ferdosi 2011") for
-applications to astronomical datasets.
+relevance to astronomical datasets.
 
 Supports weighting of data and breaking calculations into chunks.
 
