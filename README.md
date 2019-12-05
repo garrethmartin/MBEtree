@@ -25,23 +25,23 @@ Supports weighting of data and breaking calculations into chunks.
 
 ## Usage
 
-  *inputs:*
-  
-    **X**        N-d array of positions
-    
-    **BallTree** Ff true, use balltree method for space partitioning, otherwise use KDtree method. Optional, default is true.
-    
-                 the ball tree method is generally more efficient for ndim>=3.
-                 
-    **chunks**   Number of chunks to break up the calculation of densities into. This can be helpful if the number
-                 of elements is large, especially when using the KDTree method. Optional, default is 1.
-                 
-    **weights**  Optional weighting for each point. Optional, default is None
-    
-  *outputs*
-  
-    **rho**      Density at each point specified in X
-    
+*inputs:*
+
+  **X**        N-d array of positions
+
+  **BallTree** Ff true, use balltree method for space partitioning, otherwise use KDtree method. Optional, default is true.
+
+               the ball tree method is generally more efficient for ndim>=3.
+
+  **chunks**   Number of chunks to break up the calculation of densities into. This can be helpful if the number
+               of elements is large, especially when using the KDTree method. Optional, default is 1.
+
+  **weights**  Optional weighting for each point. Optional, default is None
+
+*outputs*
+
+  **rho**      Density at each point specified in X
+
 ### Example script
 
   `python example.py`
