@@ -25,8 +25,8 @@ applications to astronomical datasets.
 ...
 
 ### Example script
-'''
-python example.py
-'''
+
+  python example.py
+
 
 ### 
