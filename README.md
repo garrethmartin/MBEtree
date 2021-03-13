@@ -36,7 +36,9 @@ Supports weighting of data and breaking calculations into chunks.
   **chunks**   Number of chunks to break up the calculation of densities into. This can be helpful if the number
                of elements is large, especially when using the KDTree method. Optional, default is 1.
 
-  **weights**  Optional weighting for each point. Optional, default is None
+  **weights**  Optional weighting for each point. Optional, default is None.
+  
+  **alpha**    The sensitivity parameter for calculating the bandwidth. Optional, default is 1/d.
 
 *outputs*:
 
